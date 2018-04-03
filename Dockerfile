@@ -1,3 +1,5 @@
 FROM talkative/nodejs8
-RUN apt-get install libpng12-0
-RUN node -v
+
+RUN apt-get install -y autoconf libpng-dev
+
+RUN npm rebuild
